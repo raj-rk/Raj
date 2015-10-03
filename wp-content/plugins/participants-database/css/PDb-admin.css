@@ -1,0 +1,815 @@
+@charset "UTF-8";
+
+/* Participants DB Admin CSS */
+.has-dashicons .glyphicon {
+    font-size: 18px;
+}
+
+/*** PARTICIPANT LIST ***/
+body[class*='participants-database'] .widefat td {
+  vertical-align:middle;
+}
+body[class*='participants-database']  .widefat tr:nth-child(even) {
+  background-color:#f6f6f6;
+}
+.participants_db input[type='text'] {
+  width: 99%;
+  max-width: 400px;
+}
+.widefat.manage-fields td.focused {
+  position: relative;
+  z-index: 10000;
+  overflow: visible;
+}
+.widefat.manage-fields input.focused {
+  position:absolute;
+  margin-top:-1em;
+  z-index: 200;
+  width: 400px;
+}
+.participants_db input.add_field {
+  width: 250px;
+}
+.manage-fields.widefat td,
+.manage-fields.widefat th {
+    padding: 8px 5px;
+    position: relative;
+    z-index: 1;
+}
+.participants_db option[value='none'],
+.participants_db option[value='other'] {
+  font-weight:bold;
+}
+.participants_db input[id$='_other'] {
+}
+.participants_db input[name='temp'] {
+  display:none;
+}
+.participants_db .manage-fields {
+  z-index: 1;
+  position: relative;
+  zoom: 1;
+}
+.participants_db .manage-fields input[type="text"].digit {
+  width: 30px;
+}
+.participants_db .manage-fields select {
+  width: 100%;
+  float: none;
+}
+.participants_db .manage-fields textarea {
+  width: 100%;
+}
+.pre-mp6 .participants_db fieldset.widefat {
+  border: none;
+}
+.pagination {
+  margin-bottom: 20px;
+}
+.branch-3-7 .redfade,
+.branch-3-6 .redfade,
+.branch-3-5 .redfade {
+  box-shadow: 0 0 40px rgba(197, 99, 59, 0.3) inset;
+  border-color: rgba(197, 99, 59, 0.5);
+  background-color: rgb( 255,255,255);
+}
+[class*="pdb-"] p,
+[class*="pdb-"] h4,
+.multicheckbox,
+.selectother {
+  max-width: 950px;
+}
+fieldset.widefat {
+  width:100%;
+  overflow:auto;
+}
+fieldset.widefat.inline-controls,
+fieldset.widefat.inline-controls label {
+  line-height: 2em;
+}
+fieldset.widefat.inline-controls input,
+fieldset.widefat.inline-controls  select,
+fieldset.widefat.inline-controls label {
+  margin: 0 5px;
+  vertical-align: baseline;
+}
+fieldset.widefat.inline-controls input:first-of-type,
+fieldset.widefat.inline-controls  select:first-of-type,
+fieldset.widefat.inline-controls label:first-of-type {
+  margin-left: 0;
+}
+fieldset.widefat.inline-controls label {
+  padding-right: 15px;
+}
+.wp-core-ui .button, .wp-core-ui .button-primary, .wp-core-ui .button-secondary {
+    height: auto;
+    line-height: 24px;
+}
+.pdb-searchform .filter-count {
+  display: inline-block;
+  margin-left: 30px;
+  width: 50%;
+}
+.dashicons.sort-icon {
+  font-size: 30px;
+  line-height: 0.7;
+  opacity: 0.7;
+}
+
+
+/* HORIZ SCROLL */
+.pdb-horiz-scroll-scroller {
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.pdb-horiz-scroll-width {
+  min-width: 100em;
+}
+.manage-fields-wrap .pdb-horiz-scroll-width {
+  width: 130em;
+}
+
+/*** FOOTER ***/
+#PDb_footer {
+  display: inline-block;
+  background-color: rgba(245, 156, 0, 0.1);
+  border-color: rgba(245, 156, 0, 0.4);
+  padding:7px;
+  width:auto;
+  overflow:auto;
+}
+#PDb_footer .glyph-link {    
+  display: block;
+  float: left;
+  font-size: 36px;
+  height: 36px;
+  overflow: hidden;
+} 
+#PDb_footer .icon-xnau-glyph {
+  margin-right: 0.5ex;
+  background-color: #ffffff;
+}
+#PDb_footer .section {
+  width:280px;
+  float:left;
+  margin:0 18px;
+}
+#PDb_footer .section a {
+  color: #925700;
+}
+#PDb_footer .section a:hover {
+  color: rgba(245, 156, 0, 1);
+}
+h4 .lowast {
+  position: relative;
+  top: -3px;
+}
+.admin-edit-participant .fieldnote {
+  color: #AAAAAA;
+  font-style: italic;
+}
+.pdb-upload {
+  display: inline-block;
+  border: 1px solid #DDD;
+  overflow: auto;
+  padding: 5px;
+}
+input[readonly] {
+  border:none;
+  background:none transparent;
+  width: 100%;
+}
+input.focused[readonly] {
+  background-color: #ffffff;
+  border: 1px solid #999;
+}
+body[class*='participants-database'] a.delete {
+/*  display:block;
+  width:12px;
+  height:26px;
+  background:url('../ui/delete.png') no-repeat center center;*/
+}
+body[class*='participants-database'] .form-table {
+/*  margin-bottom:4em;*/
+}
+#manage_main_fields .glyphicon {
+  font-size: 140%;
+}
+.pdb-list .image-field-wrap img {
+  height: 30px;
+  width: auto;
+}
+.image-field-wrap img {
+  vertical-align: middle;
+}
+.image-field-wrap.file-notfound {
+  text-decoration: line-through;
+}
+.wp-admin .helptext {
+  line-height: 1.5;
+  color: #777777;
+  font-style: italic;
+}
+.wp-list-table th, .wp-list-table td, .form-table th, .form-table td {
+  vertical-align: top;
+}
+.participants_db .form-table tr:hover {
+  background-color: #F7F7F7;
+} 
+.participants_db input[type='text']+.helptext,
+.participants_db input[type='checkbox']+.helptext,
+.participants_db select+.helptext,
+.participants_db script+.helptext,
+.participants_db .wp-editor-wrap+.helptext,
+.participants_db textarea+.helptext {
+  width:390px;
+}
+.participants_db input[type='text']+.helptext,
+.participants_db input[type='checkbox']+.helptext,
+.participants_db select+.helptext {
+  /*  float:left;*/
+}
+.participants_db .wp-editor-wrap {
+  float:left;
+}
+.participants_db .wp-editor-wrap + .helptext, 
+.participants_db textarea + .helptext {
+    display: inline-block;
+    margin: 30px 0px 0px 0px;
+}
+textarea,
+select,
+input[type="text"],
+input[type="checkbox"],
+.multicheckbox label,
+.link-element label {
+  /*  float: left;
+    margin-right: 10px;*/
+}
+label input[type="checkbox"] {
+  float:none;    
+  margin: 0 4px 0 0;
+}
+.pdb-searchform fieldset {
+  display: inline-block;
+}
+.participants_db .inline-controls input[type='text'],
+.participants_db .inline-controls input[type='checkbox'],
+.participants_db .inline-controls select {
+  /*  float: none;
+    display: inline;
+    margin-right:0;*/
+}
+.pdb-admin-edit-participant .pdb-upload input[type=file] {
+  vertical-align: middle;
+}
+#checkall {
+  margin: 0;
+}
+.checkmark {
+  font-size:19px;
+  padding:0;
+  line-height: 1;
+}
+.emphasized {
+  color: #7C0000;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+body[class*='participants-database'] .selectother input[type=text] {
+  width:auto;
+}
+table.spreadsheet {
+  width:90%;
+  border-collapse:collapse;
+}
+.spreadsheet td, .spreadsheet th {
+  border:1px dashed #AAAAAA;
+  padding:3px;
+}
+body[class*='participants-database'] .text-block {
+  max-width: 35em;
+  font-size: 1.3em;
+  line-height: 1;
+}
+body[class*='participants-database'] .text-block p,
+body[class*='participants-database'] .text-block li {
+  line-height: 1.2;
+}
+/* now using WP defaults
+.participants_db input[type="submit"] {
+  background-color:#ffffff;
+  border: 1px solid #AAAAAA;
+  border-radius: 3px 3px 3px 3px;
+  box-shadow: 0 0 13px rgba(0, 0, 0, 0.3) inset;
+  padding: 3px 8px;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+}
+.participants_db input:hover[type="submit"] {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1) inset;
+}
+*/
+.participants_db input.button-primary {
+  padding:0 10px 1px;
+}
+#delete_button.unarmed {
+  opacity:0.5;
+}
+#delete_button.armed {
+  border: 1px solid rgba(204, 0, 0, 0.5);
+  color: #000;
+/*  box-shadow: 0 0 13px rgba(204, 0, 0, 0.3) inset;*/
+}
+#delete_button.armed:hover {
+  box-shadow: 0 0 2px rgba(204, 0, 0, 0.1) inset;
+}
+.pdb-searchform input[type="checkbox"], .pdb-searchform input[type="radio"] {
+  margin-right: 5px;
+}
+.participants_db.settings-class .pdb_anchor {
+  position:relative;
+  top:-5em;
+}
+.participants_db .pdb-list td > input[type="checkbox"] {
+  margin-top: -10px;
+}
+.edit-participant textarea, .participants_db textarea, .edit-participant select, .participants_db select, .participants_db input, .edit-participant input, .link-element label {
+/*  vertical-align: top;*/
+}
+[class*="participants-database"] .wp-editor-wrap {
+  max-width: 600px;
+}
+[class*="participants-database"] .wp-editor-area {
+  background-color: #FFFFFF;
+  border: 2px solid #DFDFDF;
+  color: #333333;
+  height: 20em;
+}
+.pdb-list span.textarea {
+  display: block;
+  max-height: 5em;
+  max-width: 150px;
+  overflow: auto;
+}
+.number-entry.single-digit {
+  width: 4em;
+}
+/* set placeholder colors */
+::-webkit-input-placeholder {
+  color: #AAAAAA;
+}
+:-moz-placeholder {
+  color: #AAAAAA !important;
+}
+:-ms-input-placeholder {
+  color: #AAAAAA;
+}
+:focus::-webkit-input-placeholder {
+  color:transparent;
+}
+:focus:-moz-placeholder {
+  color: transparent !important;
+}
+.pdb-admin-edit-participant .fieldnote,
+.pdb-admin-edit-participant .reqd {
+  color: #AAAAAA;
+  display: inline-block;
+  margin-left: 10px;
+  font-weight: normal;
+}
+
+/***  MANAGE FIELDS  ***/
+div.manage-fields-wrap {
+  min-width:1100px;
+}
+.manage-fields thead > tr {
+  height:6.5em;
+}
+#internal .manage-fields thead > tr {
+  height:5.3em;
+}
+#field_groups .manage-fields thead > tr {
+  height:5em;
+}
+.manage-fields.widefat th {
+  padding:0 0 0 10px;
+  vertical-align:text-top;
+  text-align:left;
+}
+.manage-fields th.sortable {
+  /*padding:7px 7px 8px;*/
+}
+.id, .order, .persistent, .sortable, .admin_column, .display_column, .CSV {
+  text-align:center;
+}
+body[class*="participants-database"] .manage-fields tr.highlighted {
+  background-color:#E0EDF9;
+}
+th.vertical-title  {
+  width:25px;
+}
+th.vertical-title.number-column {
+  width: 3em;
+}
+th.form_element {
+  width:150px;
+}
+th.validation, th.title, th.default, th.group, th.name {
+  width:8%;
+}
+#internal th.name, #internal th.title {
+  width:auto;
+}
+#internal table.manage-fields {
+  width: 360px;
+}
+#field_groups th.title {
+  width:auto;
+}
+.manage-fields th.vertical-title {
+  vertical-align:text-top;
+  padding: 5px 0 0 0;
+}
+.manage-fields th.vertical-title span {
+/*  writing-mode:vertical-rl;*/
+  transform: rotate(90deg);
+  transform-origin: left bottom;
+  
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  
+  -moz-transform-origin: left bottom;
+  -webkit-transform-origin: left bottom;
+  -o-transform-origin: left bottom;
+  -ms-transform-origin: left bottom;
+  
+  display: inline-block;
+  height: auto;
+  left: 0.6em;
+  line-height: 1.1;
+  position: relative;
+  top: -2em;
+  white-space: nowrap;
+  width: auto;
+  word-wrap: normal;
+}
+.ie8 .manage-fields th.vertical-title span {
+  top:0;
+}
+.manage-field-groups th.vertical-title span {
+  top: -1em;
+}
+.manage-fields th.admin_column span, .manage-fields th.display_column span {
+/*  left:18px;*/
+}
+.manage-fields input, 
+.manage-fields textarea {
+  width:100%;
+}
+.manage-fields input[type="checkbox"], 
+.manage-fields input[type="radio"] {
+  width:auto;
+  position:relative;
+  top:-1px;
+}
+.manage-fields textarea {
+  height:3.5em;
+}
+.manage-field-groups th.name {
+  width:160px;
+}
+
+.manage-field-groups th.fields {
+  width:30px;
+}
+.manage-field-groups td[id^='field_count'] {
+  text-align:center;
+}
+.manage-field-groups th.column span {
+  position:relative;
+  left:5px;
+}
+td.order {
+  padding:3px 0;
+  text-align: center;
+}
+a.dragger {
+  cursor: move;
+}
+.branch-3-7 .glyphicon.glyphicon-sort:after, 
+.branch-3-6 .glyphicon.glyphicon-sort:after, 
+.branch-3-5 .glyphicon.glyphicon-sort:after {
+  content: "↕";
+}
+.branch-3-7 .glyphicon.glyphicon-remove:after, 
+.branch-3-6 .glyphicon.glyphicon-remove:after, 
+.branch-3-5 .glyphicon.glyphicon-remove:after {
+  content: "☓";
+}
+.branch-3-7 .glyphicon.glyphicon-edit:after, 
+.branch-3-6 .glyphicon.glyphicon-edit:after, 
+.branch-3-5 .glyphicon.glyphicon-edit:after {
+  content: "✎";
+}
+.glyphicon.glyphicon-sort:after {
+  content: "\f156";
+  white-space: nowrap;
+}
+.glyphicon.glyphicon-remove:after {
+  color: #D64E07;
+  content: "\f158";
+}
+.glyphicon.glyphicon-edit:after {
+  content: "\f327";
+}
+.widefat.pdb-list .glyphicon {
+  line-height: 18px;
+  font-size: 18px;
+}
+.mirror {
+    display:block; 
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -o-transform: matrix(-1, 0, 0, 1, 0, 0);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+#message {
+  font-size: 16px;
+}
+
+/* SETTINGS PAGE */
+.settings-class textarea {
+  float:left;
+  margin-right:10px;
+  height:140px;
+  width:400px;
+}
+.pdb-admin-settings {
+  max-width: 670px;
+}
+.pdb-admin-settings h3 {
+  margin-top: 3em;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #aaa;
+}
+
+/*   UI TABS   */
+
+/* hide before tabs kicks in */
+#fields-tabs.ui-tabs {
+  visibility:visible;
+}
+#fields-tabs, 
+.mask {
+  visibility:hidden;
+}
+.mask {
+  position: absolute;
+  background-color: #F0F0F0;
+  display: block;
+  z-index: 1000;
+}
+.branch-3-7 .mask,
+.branch-3-6 .mask,
+.branch-3-5 .mask  {
+  background-color: white;
+}
+.ui-tabs-nav .mask {
+  left: 1px;
+  bottom: -1px;
+  height: 1px;
+  width: calc(100% - 6px);
+  display: block;
+  z-index: 900;
+}
+.participants_db .ui-widget-content {
+  background-image: none;
+  border: none;
+  color: inherit;
+}
+.participants_db .ui-widget {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+
+.participants_db .ui-widget-content {
+  background: transparent;
+}
+.participants_db .ui-tabs-nav {
+  background-image: none;
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  height: auto;
+  margin: 18px 0 20px;
+  padding: 0 10px;
+  overflow: visible;
+}
+.participants_db .ui-tabs-nav li {
+  background-color: transparent;
+  background-image: none;
+  border:none;
+  display: inline-block;
+  position: relative;
+  margin: 1px 0 2px;
+  height: auto;
+  width: auto;
+  float: none;
+}
+.participants_db .ui-tabs-nav li.ui-tabs-active.ui-state-active {
+  margin-bottom:0;
+}
+.branch-3-7 .participants_db .ui-tabs-nav li,
+.branch-3-6 .participants_db .ui-tabs-nav li,
+.branch-3-5 .participants_db .ui-tabs-nav li {
+  margin: 1px 0 2px;
+}
+.participants_db .ui-tabs-nav .ui-state-default a {
+  background-color: rgba(0,0,0,0.1);
+ text-shadow: none;
+  padding-bottom: 9px;
+}
+.participants_db .ui-tabs-nav .ui-tabs-active.ui-state-active a {
+  background-color: rgba(0,0,0,0);
+  padding-bottom: 11px;
+}
+.participants_db .ui-tabs-nav .ui-tabs-active.ui-state-active .mask {
+  visibility: visible;
+}
+.participants_db .ui-tabs-nav li a {
+  padding: 4px 20px 6px;
+  font-weight: normal;
+}
+.participants_db .ui-tabs-nav li a {
+  line-height: 1.4;
+  display: inline-block;
+  padding: 9px 12px 5px;
+  margin: 0 4px 0 0;
+  border-style: solid;
+  border-color: #CCC #CCC #F9F9F9;
+  border-width: 1px 1px 0;
+  color: #888888;
+  background-color:#eeeeee;
+  text-shadow: rgba(255, 255, 255, 1) 0 1px 0;
+  text-decoration: none;
+  -moz-border-radius: 2px 2px 0 0;
+  -webkit-border-top-left-radius: 2px;
+  -webkit-border-top-right-radius: 2px;
+  -khtml-border-top-left-radius: 2px;
+  -khtml-border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+.participants_db .ui-tabs-nav li a:hover {
+  color: #000000;
+  background-color: #F3F3F3;
+  
+}
+.participants_db .ui-tabs-nav li.ui-tabs-selected a, 
+.participants_db .ui-tabs-nav li.ui-state-active a,
+.participants_db .ui-tabs-nav li a:focus {
+  color: #333333;
+  outline:none;
+}
+.participants_db .ui-tabs-nav li.ui-state-active a {
+}
+.participants_db .ui-tabs-panel {
+  clear: both;
+  position: relative;
+  left:0;
+  padding: 0;
+}
+.settings-class.participants_db .ui-tabs-panel {
+  max-width: 60em;
+}
+.participants_db .ui-tabs-panel h3 {
+  font: italic normal normal 24px/29px Georgia, "Times New Roman", "Bitstream Charter", Times, serif;
+  margin: 0;
+  padding: 0 0 5px;
+  line-height: 35px;
+  text-shadow: 0 1px 0 #fff;
+}
+.participants_db .ui-tabs-panel h4 {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 1em 0;
+}
+.field-group-title {
+  width: 100%;
+  border-bottom: 2px solid #DDDDDD;
+}
+/* DIALOG BOXES */
+#dialog-overlay {
+  /* set it to fill the whole screen */
+  width:100%;
+  height:100%;
+  /* transparency for different browsers */
+  filter:alpha(opacity=50);
+  -moz-opacity:0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+  background:#000;
+  /* make sure it appear behind the dialog box but above everything else */
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:3000;
+  /* hide it by default */
+  display:none;
+}
+.ui-dialog.ui-widget {
+  font-family: inherit;
+  font-size:1.1em;
+  border-radius: 5px;
+  background:#FFFFFF;
+  border: 1px solid #D54E21;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+  /* styling of the dialog box, i have a fixed dimension for this demo */
+  width:328px;
+  /* make sure it has the highest z-index */
+  position:absolute;
+  z-index:500000;
+  /* hide it by default */
+  display:none;
+}
+.ui-dialog {
+  padding:20px 40px;
+}
+.ui-dialog a.button{
+  /*stylesforbutton*/
+  margin:10px auto 0 auto;
+  text-align:center;
+  display:block;
+  width:50px;
+  padding:5px 10px 6px;
+  color:#fff;
+  text-decoration:none;
+  font-weight:bold;
+  line-height:1;
+  /*buttoncolor*/
+  background-color:#e33100;
+  /*css3implementation:)*/
+  /*roundedcorner*/
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  /*dropshadow*/
+  -moz-box-shadow:0 1px 3px rgba(0,0,0,0.5);
+  -webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5);
+  /*textshadow*/
+  text-shadow:0 -1px 1px rgba(0,0,0,0.25);
+  border-bottom:1px solid rgba(0,0,0,0.25);
+  position:relative;
+  cursor:pointer;
+}
+.ui-dialog a.button:hover{
+  background-color:#c33100;
+}
+.ui-dialog .ui-widget-header {
+  display: none;
+}
+.ui-dialog .ui-dialog-buttonpane {
+  border: none;
+  display: block;
+  padding: 0;
+}
+.ui-helper-clearfix:before, .ui-helper-clearfix:after {
+  display: inherit;
+  clear: none;
+}
+.ui-dialog .ui-widget, .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+  font-family: inherit;
+}
+.ui-dialog .ui-state-default {
+  background: #E6E6E6;
+  border: 1px solid #D3D3D3;
+  font-weight: normal;    
+  cursor: pointer;
+  margin: 0.5em 0.4em 0.5em 0;
+  line-height: 1.8;
+}
+.ui-dialog .ui-state-hover {
+  border: 1px solid #b3b3b3;
+}
+.ui-dialog .ui-icon {
+  vertical-align: middle;
+}
+.ui-dialog .ui-icon.dashicons[class*="no"] {
+  color: #D54E21;
+}
+.ui-dialog .ui-icon.dashicons[class*="yes"] {
+}
+#confirmation-dialog p{
+}
+.ui-button {
+  margin:0.6em 2em 0.6em 0;
+}
+.ui-dialog-titlebar {
+  position:absolute;
+  top:1.6em;
+  right:1.6em;
+}

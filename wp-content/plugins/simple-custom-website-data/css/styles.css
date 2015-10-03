@@ -1,0 +1,129 @@
+li{
+    margin-bottom: 14px;
+}
+
+h2 span.subtitle{
+    font-size: 0.6em;
+}
+
+[type="file"]{
+    cursor: pointer;
+}
+
+#box-table {
+    border-bottom: 7px solid #6D6D6D;
+    border-collapse: collapse;
+    border-top: 7px solid #6D6D6D;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Sans-Serif;
+    font-size: 12px;
+    margin: 20px;
+}
+#box-table th {
+    background: none repeat scroll 0 0 #E8EDFF;
+    border: 1px solid #9B9B9B;
+    color: #21759B;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 8px;
+}
+#box-table td {
+    background: none repeat scroll 0 0 #E8EDFF;
+    border: 1px solid #9B9B9B;
+    color: #008ADB;
+    padding: 8px;
+}
+
+.page-title{
+    font-size: 1.5em;
+}
+
+.select {
+    padding: 1em;
+}
+
+
+.actionbtn{
+    background-color: #F1F1F1;
+    padding: 0.5em;
+    color: #21759B;
+    text-shadow:0 1px 0 #fff;
+    border-radius: 3px;
+    text-decoration: none;
+}
+.actionbtn:hover{
+    color: #D54E21;
+}
+
+.cwd-container{
+    width: 50%;
+}
+
+.cwd-wrapper p{
+    font-size: 1.1em;
+    line-height: 1.3em;
+}
+
+.cwd-wrapper input, .cwd-wrapper textarea{
+    margin-bottom: 10px;
+}
+
+.cwd-wrapper textarea{
+        height: 137px;
+    width: 242px;
+}
+
+.cwd-container h3{
+    text-decoration: underline;
+}
+#message{
+    display: inline-block;
+    width: 98%;
+    margin: 0;
+}
+#message p{
+    width:70%;
+    float: left;
+}
+
+.hide-message {
+    background-color: #FF6060;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 1px 1px 1px #CCCCCC;
+    color: white;
+    cursor: pointer;
+    float: right;
+    font-size: 9px;
+    font-weight: bold;
+    height: 10px;
+    margin: 0.5em 0;
+    padding: 0 1px 5px 2px;
+    text-align: center;
+    width: 10px;
+}
+
+.plugin-info {
+    color: #AAAAAA;
+    position: absolute;
+    right: 7px;
+    text-align: right;
+    font-size: 11px!important
+}
+
+.plugin-info a{
+    color: #AAAAAA;
+}
+
+.ul-list{
+    list-style: disc inside none;
+}
+
+
+#adminmenu .wp-menu-image img {
+    opacity: 1;
+    }
+
+/*Footer Hack*/
+#wpfooter{
+    display: none;
+}
+

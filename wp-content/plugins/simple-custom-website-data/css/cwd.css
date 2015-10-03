@@ -1,0 +1,131 @@
+li{
+    margin-bottom: 14px;
+}
+
+h2 span.subtitle{
+    font-size: 0.6em;
+}
+
+.select, [type="file"]{
+    cursor: pointer;
+}
+
+.page-title{
+    font-size: 1.5em;
+}
+
+.select {
+    padding: 1em;
+}
+
+.cwd-tr-bg-color-1{
+    background-color: #F9F9F9;
+}
+
+.cwd-td-array{
+    line-height: 1.1em!important;
+}
+
+.cwd-td-array ul li{
+    margin-bottom: 0;
+    padding-left:17px;
+}
+
+.cwd-wrapper p{
+    font-size: 1.1em;
+    line-height: 1.3em;
+}
+
+.cwd-wrapper input, .cwd-wrapper textarea{
+    margin-bottom: 10px;
+}
+
+.cwd-wrapper textarea{
+    height: 332px;
+    resize: vertical;
+    width: 100%;
+}
+
+.cwd-container h3{
+    text-decoration: underline;
+}
+
+#message{
+    display: inline-block;
+    width: 98%;
+    margin: 0;
+}
+
+#message p{
+    width:70%;
+    float: left;
+}
+
+.hide-message {
+    background-color: #FF6060;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 1px 1px 1px #CCCCCC;
+    color: white;
+    cursor: pointer;
+    float: right;
+    font-size: 9px;
+    font-weight: bold;
+    height: 10px;
+    margin: 0.5em 0;
+    padding: 0 1px 5px 2px;
+    text-align: center;
+    width: 10px;
+}
+
+.plugin-info {
+    color: #AAAAAA;
+/*    position: absolute;
+    right: 7px;
+    text-align: right;*/
+    font-size: 11px!important
+}
+
+.plugin-info a{
+    color: #AAAAAA;
+}
+
+.ul-list{
+    list-style: disc inside none;
+}
+
+
+#adminmenu .wp-menu-image img {
+    opacity: 1;
+}
+
+.cwd-wrapper{
+    display: inline-block;
+    width: 100%;
+}
+
+.cwd-left{
+    float: left;
+    width: 70%;
+}
+
+.cwd-right{
+    float: left;
+    width: 28%;
+    padding: 0 1%;
+    margin-top: 52px;
+}
+
+.cwd-right-panel{
+    border: 1px solid #e5e5e5;
+    padding:1.5em;
+    background-color:#ffffff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+/*Footer Hack*/
+/*
+#wpfooter{
+    display: none;
+}
+
+*/

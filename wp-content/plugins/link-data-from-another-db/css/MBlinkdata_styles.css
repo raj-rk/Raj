@@ -1,0 +1,61 @@
+#mb_left{
+    float: left;
+    min-width: 400px;
+}
+#mb_left label{
+    font-weight:bold;
+    color:#21759B
+}
+#mb_left input[type="text"], #mb_left input[type="password"]{
+    width:150px
+}
+#mb_right{
+    float: right;
+    margin-right: 20px;
+    width: 300px;
+}
+#mb_tips{
+    font-family: sans-serif;
+    font-size:13px;
+    line-height:18px;
+    background-color:#ECECEC;
+    border:1px solid #333;
+    border-right:1px solid #000;
+    width:280px;
+}
+#mb_tips_header{
+    background-color:#777;
+    color:#fff;
+    border-bottom: 1px solid #333;
+    text-align:center;
+    font-weight:bold;
+}
+#mb_tips_content{
+    color:#333;
+    padding:4px;
+    font-size:11px;
+    border-bottom: 1px solid #000;
+}
+#mb_tips_content span{
+    font-weight:bold;
+    color:#21759B
+}
+#mb_left textarea{
+    width: 360px; height:50px;
+}
+
+#MBlinkdata #select_your_data{
+    border: 1px dotted #ccc
+}
+#MBlinkdata #select_your_data .form-table tr:hover{
+    background-color:#ccc;
+    color:#fff
+}
+#MBlinkdata #select_your_data .form-table td{
+    padding:2px 4px;
+}
+#MBlinkdata #select_your_data .form-table input[type="checkbox"]{
+    position:relative;
+    top:-2px;
+    left:8px
+}
